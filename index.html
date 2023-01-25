@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <button></button>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">shopping_cart</span> STORE
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">inventory_2</span> Products
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">category</span> Categories
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">groups</span> Customers
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">fact_check</span> Inventory
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">poll</span> Reports
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>DASHBOARD</h2>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>ACTIVE PROJECTS</h3>
+              <span class="material-icons-outlined">inventory_2</span>
+            </div>
+            <h1>249</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>CURRENT WORKING DOMAINS</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>25</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>NO OF EMPLOYEES</h3>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            <h1>1500</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>IMPORTANT NOTIFICATIONS</h3>
+              <span class="material-icons-outlined">notification_important</span>
+            </div>
+            <h1>56</h1>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <h2 class="chart-title">Top 5 CLIENT SERVICES</h2>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">TARGET AND ACQUIRED REVENUE</h2>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+  </body>
+  <footer>
+      <div id="footer" class="footer0">
+        <center><h1>CODeX ~~MrinmoY~~</h1></center>
+      </div>
+        <div class="social-media" style="background-color: rgb(0, 255, 34);">
+          <a href="https://www.facebook.com/" target="_blank" href="cart_payment.html">
+            <i class="fa-brands fa-facebook-f" width="40" height="50"></i>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" href="cart_payment.html">
+            <i class="fa-brands fa-linkedin" width="40" height="50"></i>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" href="cart_payment.html">
+            <i class="fa-brands fa-youtube" width="40" height="50"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" href="cart_payment.html">
+            <i class="fa-brands fa-square-instagram" width="40" height="50"></i>
+          </a>
+          <a href="https://www.twitter.com/" target="_blank" href="cart_payment.html">
+            <i class="fa-brands fa-twitter" width="40" height="50"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="product">
+          <div class="heading">Products</div>
+          <h2><a href="https://www.olx.in/" rel="next" class="div" target="_blank" href="cart_payment.html">Sell your Products</a></h2>
+          <h2><a href="https://clutch.co/profile/anderson-collaborative#summary" rel="next" class="div" target="_blank" href="cart_payment.html">Advertise</a></h2>
+          <h2><a href="https://shopping.google.com/?pli=1" rel="next" class="div" target="_blank" href="cart_payment.html">Pricing</a></h2>
+          <h2><a href="https://www.godaddy.com/en-in" rel="next" class="div" target="_blank" href="cart_payment.html">Product Business</a></h2>
+  
+        </div>
+        <div class="services">
+          <div class="heading">Services</div>
+          <h2><a href="https://mhedu.force.com/CSOM/s/website-product-return" rel="next" class="div" target="_blank" href="cart_payment.html">Return</a></h2>
+          <h2><a href="https://millennialmoney.com/honey-app-review/" rel="next" class="div" target="_blank" href="cart_payment.html">Cash Back</a></h2>
+          <h2><a href="https://influencermarketinghub.com/refersion/" rel="next" class="div" target="_blank" href="cart_payment.html">Af fliate Marketing</a></h2>
+          <h2><a href="FACEBOOK.html" rel="next" class="div" target="_blank" href="cart_payment.html">Others</a></h2>
+        </div>
+        <div class="Company">
+          <div class="heading">Company</div>
+          <h2><a href="https://services.india.gov.in/service/detail/lodge-complaint-online-with-national-consumer-helpline-portal-1" rel="next" class="div" target="_blank" href="cart_payment.html">Complaint</a></h2>
+          <h2><a href="https://www.upgrad.com/blog/career-in-web-development/" rel="next" class="div" target="_blank" href="cart_payment.html">Careers</a></h2>
+          <h2><a href="https://influencermarketinghub.com/refersion/q" rel="next" class="div" target="_blank" href="cart_payment.html">Affliate Marketing</a></h2>
+          <h2><a href="FACEBOOK.html" rel="next" class="div" target="_blank" href="cart_payment.html">Support</a></h2>
+        </div>
+        <div class="Get Help">
+          <div class="heading">Get Help</div>
+           <h2><a href="https://www.call2customers.com/call-center-services/customer-care.html" rel="next" class="div" target="_blank" href="cart_payment.html">Help Center</a></h2>
+          <h2><a href="privacy_policy.html" rel="next" class="div" target="_blank" href="cart_payment.html">Privacy Policy</a></h2>
+          <h2><a href="https://influencermarketinghub.com/refersion/q" rel="next" class="div" target="_blank" href="cart_payment.html">Terms</a></h2>
+          <h2><a href="FACEBOOK.html" rel="next" class="div" target="_blank" href="cart_payment.html">Login</a></h2>
+        </div>
+      </div>
+      <div class="footer3"><h4>Copyright © Shoppers Point ~MB's 2023-2040</h4></div>
+    </footer>
+</html>
